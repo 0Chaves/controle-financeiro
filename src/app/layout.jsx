@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
       <body
-        className={`${sunflower.className} bg-gradient-to-b from-white to-green-50 `}
+        className={`${sunflower.className} bg-gradient-to-b from-gray-50 to-green-50 `}
       >
         {/* <Navbar/> */}
         {children}

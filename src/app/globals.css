@@ -2,33 +2,33 @@
 
 .alimentacao{
     @apply 
-    rounded-full p-1 w-fit bg-amber-300 text-sm leading-relaxed
+    rounded-full p-1 w-fit bg-amber-200 text-sm leading-relaxed
 }
 .transporte{
     @apply 
-    rounded-full p-1 w-fit bg-blue-300 text-sm leading-relaxed
+    rounded-full p-1 w-fit bg-blue-200 text-sm leading-relaxed
 }
 .moradia{
     @apply 
-    rounded-full p-1 w-fit bg-fuchsia-300 text-sm leading-relaxed
+    rounded-full p-1 w-fit bg-fuchsia-200 text-sm leading-relaxed
 }
 .saude{
     @apply 
-    rounded-full p-1 w-fit bg-red-300 text-sm leading-relaxed
+    rounded-full p-1 w-fit bg-red-200 text-sm leading-relaxed
 }
 .educacao{
     @apply 
-    rounded-full p-1 w-fit bg-green-300 text-sm leading-relaxed
+    rounded-full p-1 w-fit bg-green-200 text-sm leading-relaxed
 }
 .lazer{
     @apply 
-    rounded-full p-1 w-fit bg-cyan-300 text-sm leading-relaxed
+    rounded-full p-1 w-fit bg-cyan-200 text-sm leading-relaxed
 }
 .trabalho{
     @apply 
-    rounded-full p-1 w-fit bg-lime-300 text-sm leading-relaxed
+    rounded-full p-1 w-fit bg-lime-200 text-sm leading-relaxed
 }
 .outros{
     @apply 
-    rounded-full p-1 w-fit bg-gray-300 text-sm leading-relaxed
+    rounded-full p-1 w-fit bg-gray-200 text-sm leading-relaxed
 }
