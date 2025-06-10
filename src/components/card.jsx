@@ -17,13 +17,13 @@ export default function Card({transacao}){
                         <div>{transacao.data.toLocaleDateString()}</div>
                     </div>
                 </div>
-                <div className="rounded-full p-1 w-fit bg-amber-300 text-sm leading-relaxed">
+                <div className={transacao.categoria == 'Alimentação' ? 'alimentacao' : transacao.categoria == 'Transporte' ? 'transporte' : transacao.categoria == 'Moradia' ? 'moradia' : transacao.categoria == 'Saúde' ? 'saude' : transacao.categoria == 'Educacao' ? 'educacao' : transacao.categoria == 'Lazer' ? 'lazer' : transacao.categoria == 'Trabalho' ? 'trabalho' : "outros"}>
                    {transacao.categoria} 
                 </div>
             </div>
             <div className="flex flex-col items-end text-right space-y-4">
                 <div className={transacao.tipo === 'Entrada'? "text-green-400 font-bold text-xl" : "text-red-400 font-bold text-xl"} >{transacao.tipo === 'Entrada'? `+ R$ ${transacao.valor}` : `- R$ ${transacao.valor}` }</div>
-                <DeleteButton transacao={transacao}/>
+                <DeleteButton id={transacao._id}/>
             </div>
         </div>
     )

@@ -32,7 +32,9 @@ export async function saveTransacao(transacao) {
 }
 
 export async function deleteTransacao(id){
+    console.log("Ta funconaon?")
     await connectDB()
+    console.log("AAAAAA")
     await Transacao.findByIdAndDelete(id)
     console.log("Transação deletada")
     revalidatePath('/')
