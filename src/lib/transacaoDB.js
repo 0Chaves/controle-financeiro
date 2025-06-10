@@ -7,7 +7,11 @@ import { revalidatePath } from "next/cache"
 
 export async function getTrancacoes(){
     await connectDB()
-    return await Transacao.find({})
+    const transacoes = await Transacao.find({}).lean()
+    return transacoes.map(t=>({
+        ...t,
+        _id: t._id.toString()
+    }))
 }
 
 export async function getTransacaoById(id){
@@ -30,5 +34,6 @@ export async function saveTransacao(transacao) {
 export async function deleteTransacao(id){
     await connectDB()
     await Transacao.findByIdAndDelete(id)
+    console.log("Transação deletada")
     revalidatePath('/')
 }

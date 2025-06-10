@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${sunflower.className} bg-gradient-to-b from-white to-green-50 `}
       >
-        <Navbar/>
+        {/* <Navbar/> */}
         {children}
         <footer className="bg-gradient-to-b from-green-400 to-green-500 text-center flex justify-center">
           <div>
