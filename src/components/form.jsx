@@ -57,7 +57,7 @@ export default function Form(){
               <label htmlFor="">Data *</label>
               <input type="date" value={transacao.data} onChange={(e)=>setTransacao({...transacao, data: e.target.value})} required className="bg-white rounded-md border-gray-400 p-2 border"/>
             </div>
-            <button className="bg-blue-500 text-white p-2 rounded-md hover:cursor-pointer hover:bg-blue-600">Nova Transacao</button>
+            <button className="bg-blue-600 text-white p-2 rounded-md hover:cursor-pointer hover:bg-blue-800">Nova Transacao</button>
         </form>
     )
 }
